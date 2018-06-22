@@ -9,17 +9,28 @@ TPM will enable project & sales lead to evaluate the existing talent, pricing, a
 Data 
 For this project we will use employee data from IBM Watson analytics: https://www.ibm.com/communities/analytics/watson-analytics-blog/hr-employee-attrition/ 
 
-Technologies
+
+
+Technologies to be used
+
+
+
 	MongoDB – for housing data, register feedback from portal
+
 	HTML5 – for front-end visualization
+
 	Bootstrap Templates – a dashboard / gadget view for the landing pages
+
 	Leaflets – to visualize the geography of the employees & associates 
+
 	D3 – for graphs and pie visualization.
+
 	Flask – for hosting TPM
 
 
 
 
+Google Doc https://docs.google.com/document/d/1VqPhSUxUNpRt9NmTrZOj_ZQUpb4CLp7FsivYUU0KYgg/edit
 
 
 
