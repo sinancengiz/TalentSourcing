@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TalentPool</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin=“anonymous”>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="container-fluid" style="margin-left:0px; margin-right:0px; font-family:Verdana, Geneva, Tahoma, sans-serif;background-color:#white">
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-dark bg-dark" style="margin-bottom:0px;">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                  <li class="nav-item">
+                     <a href="#" style="color: style=justify-content-center:red"><b>TalentPool</b> <img alt="Brand" src="search..png" width="50px"></a>
+                  </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- jombotron text -->
+      <div class="jumbotron text-center" style="min-height: 100px; background-color: rgb(68, 4, 4); ">
+          <h1 style="color: wheat">Find Candidate</h1>
+          <p style="color: rgb(88, 10, 10)">
+      </div>
+      <!-- Search Criteria -->
+      <div class="col-md-2">
+        <div id="bar-plot"></div>
+
+          <div class="panel panel-default" style="padding:10pt; background-color:#white;font-size:8pt; color:black;">
+            <h6>Filter Search</h6>
+            <!-- take users input data about the movies -->
+            <form id="filter-form">
+                JobRole <br> <input type="text" id="date" size="17" style="color:black"> <br>
+                EducationField <br> <input type="text" id="EducationField"  size="17" style="color:black"> <br>
+                BusinessTravel <br> <input type="text" id="BusinessTravel"  size="17" style="color:black"> <br>
+                Select a Country <br> <select id="country"  style="width: 125px; color:black"> </select> <br>
+                Select a Shape <br> <select type="text" id="shape" style="width: 125px; color:black"> </select> <br>
+                Results Per Page <br> <select type="text" id="page" style="width: 125px; color:black"> </select> <br>
+             </form>
+          </div>
+        </div>
+        <!-- Table Data -->
+        <div class="col-md-10">
+        <table class="table table-striped table-light" id="myTable">
+            <thead>
+              <tr>
+                <th>Age</th>
+                <th>Attrition</th>
+                <th>BusinessTravel</th>
+                <th>DailyRate</th>
+                <th>Department</th>
+                <th>DistanceFromHome</th>
+                <th>Education</th>
+                <th>EducationField</th>
+                <th>EmployeeCount</th>
+                <th>EmployeeNumber</th>
+                <th>EnvironmentSatisfaction</th>
+                <th>Gender</th>
+                <th>HourlyRate</th>
+                <th>JobInvolvement</th>
+                <th>JobLevel</th>
+                <th>JobRole</th>
+                <th>JobSatisfaction</th>
+                <th>MaritalStatus</th>
+                <th>MonthlyIncome</th>
+                <th>MonthlyRate</th>
+                <th>NumCompaniesWorked</th>
+                <th>Over18</th>
+                <th>OverTime</th>
+                <th>PercentSalaryHike</th>
+                <th>PerformanceRating</th>
+                <th>RelationshipSatisfaction</th>
+                <th>StandardHours</th>
+                <th>StockOptionLevel</th>
+                <th>TotalWorkingYears</th>
+                <th>TrainingTimesLastYear</th>
+                <th>WorkLifeBalance</th>
+                <th>YearsAtCompany</th>
+                <th>YearsInCurrentRole</th>
+                <th>YearsSinceLastPromotion</th>
+                <th>YearsWithCurrManager</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        </div>
+        <!-- Pagination -->
+        <div class="col-md-12">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                </ul>
+              </nav>
+        </div>
+
+
+    </div>
+    <script src="../plot.js" type="text/javascript"></script>
+
+    <script src="../Data/data.js" type="text/javascript"></script>
+
+    <script src="../index.js" type="text/javascript"></script>
+
+
+</body>
+
+</html>
